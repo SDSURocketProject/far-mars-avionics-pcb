@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "far-mars-obc"
+Date "2020-07-25"
+Rev "E"
+Comp "SDSU Rocket Project"
+Comment1 "Schematic by Keona D'Souza"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Motion:BNO055 IMU1
+U 1 1 5F5B429D
+P 5700 3700
+AR Path="/5F5AF575/5F5B429D" Ref="IMU1"  Part="1" 
+AR Path="/5F22641F/5F5B429D" Ref="IMU?"  Part="1" 
+F 0 "IMU1" H 5300 4350 50  0000 C CNN
+F 1 "BNO055" H 5350 3050 50  0000 C CNN
+F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 5950 3050 50  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 5700 3900 50  0001 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6300 3700
+NoConn ~ 6300 3200
+$Comp
+L power:+3.3V #PWR045
+U 1 1 5F5B42A8
+P 5600 2800
+AR Path="/5F5AF575/5F5B42A8" Ref="#PWR045"  Part="1" 
+AR Path="/5F22641F/5F5B42A8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR045" H 5600 2650 50  0001 C CNN
+F 1 "+3.3V" H 5615 2973 50  0000 C CNN
+F 2 "" H 5600 2800 50  0001 C CNN
+F 3 "" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3000 5600 2900
+$Comp
+L Device:C C20
+U 1 1 5F5B42AF
+P 6700 3700
+AR Path="/5F5AF575/5F5B42AF" Ref="C20"  Part="1" 
+AR Path="/5F22641F/5F5B42AF" Ref="C?"  Part="1" 
+F 0 "C20" H 6815 3746 50  0000 L CNN
+F 1 "100n" H 6815 3655 50  0000 L CNN
+F 2 "" H 6738 3550 50  0001 C CNN
+F 3 "~" H 6700 3700 50  0001 C CNN
+	1    6700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3000 5800 2900
+Wire Wire Line
+	6700 2900 6700 3550
+Wire Wire Line
+	6700 3850 6700 4500
+Wire Wire Line
+	5800 4500 5800 4400
+Wire Wire Line
+	5600 2900 5800 2900
+Connection ~ 5600 2900
+Wire Wire Line
+	5600 2900 5600 2800
+Connection ~ 5800 2900
+Wire Wire Line
+	5800 2900 6700 2900
+$Comp
+L power:GND #PWR046
+U 1 1 5F5B42BE
+P 5600 4500
+AR Path="/5F5AF575/5F5B42BE" Ref="#PWR046"  Part="1" 
+AR Path="/5F22641F/5F5B42BE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR046" H 5600 4250 50  0001 C CNN
+F 1 "GND" H 5605 4327 50  0000 C CNN
+F 2 "" H 5600 4500 50  0001 C CNN
+F 3 "" H 5600 4500 50  0001 C CNN
+	1    5600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4400 5600 4500
+Wire Wire Line
+	5600 4500 5800 4500
+Connection ~ 5600 4500
+Connection ~ 5800 4500
+Wire Wire Line
+	5800 4500 6700 4500
+$Comp
+L Device:R R14
+U 1 1 5F5B42C9
+P 4450 2950
+AR Path="/5F5AF575/5F5B42C9" Ref="R14"  Part="1" 
+AR Path="/5F22641F/5F5B42C9" Ref="R?"  Part="1" 
+F 0 "R14" H 4520 2996 50  0000 L CNN
+F 1 "10k" H 4520 2905 50  0000 L CNN
+F 2 "" V 4380 2950 50  0001 C CNN
+F 3 "~" H 4450 2950 50  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR043
+U 1 1 5F5B42CF
+P 4450 2750
+AR Path="/5F5AF575/5F5B42CF" Ref="#PWR043"  Part="1" 
+AR Path="/5F22641F/5F5B42CF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR043" H 4450 2600 50  0001 C CNN
+F 1 "+3.3V" H 4465 2923 50  0000 C CNN
+F 2 "" H 4450 2750 50  0001 C CNN
+F 3 "" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2800 4450 2750
+$Comp
+L Device:R R15
+U 1 1 5F5B42D6
+P 4900 2950
+AR Path="/5F5AF575/5F5B42D6" Ref="R15"  Part="1" 
+AR Path="/5F22641F/5F5B42D6" Ref="R?"  Part="1" 
+F 0 "R15" H 4970 2996 50  0000 L CNN
+F 1 "10k" H 4970 2905 50  0000 L CNN
+F 2 "" V 4830 2950 50  0001 C CNN
+F 3 "~" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR044
+U 1 1 5F5B42DC
+P 4900 2750
+AR Path="/5F5AF575/5F5B42DC" Ref="#PWR044"  Part="1" 
+AR Path="/5F22641F/5F5B42DC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR044" H 4900 2600 50  0001 C CNN
+F 1 "+3.3V" H 4915 2923 50  0000 C CNN
+F 2 "" H 4900 2750 50  0001 C CNN
+F 3 "" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2800 4900 2750
+Wire Wire Line
+	4900 3200 5100 3200
+Wire Wire Line
+	4900 3100 4900 3200
+Wire Wire Line
+	4450 3100 4450 3600
+$Comp
+L Device:R R13
+U 1 1 5F5B42E8
+P 4100 2950
+AR Path="/5F5AF575/5F5B42E8" Ref="R13"  Part="1" 
+AR Path="/5F22641F/5F5B42E8" Ref="R?"  Part="1" 
+F 0 "R13" H 4170 2996 50  0000 L CNN
+F 1 "1k" H 4170 2905 50  0000 L CNN
+F 2 "" V 4030 2950 50  0001 C CNN
+F 3 "~" H 4100 2950 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5F5B42EE
+P 3800 2950
+AR Path="/5F5AF575/5F5B42EE" Ref="R12"  Part="1" 
+AR Path="/5F22641F/5F5B42EE" Ref="R?"  Part="1" 
+F 0 "R12" H 3870 2996 50  0000 L CNN
+F 1 "1k" H 3870 2905 50  0000 L CNN
+F 2 "" V 3730 2950 50  0001 C CNN
+F 3 "~" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4000 3800 4000
+Wire Wire Line
+	3800 3100 3800 4000
+Wire Wire Line
+	4100 3100 4100 3900
+$Comp
+L power:+3.3V #PWR042
+U 1 1 5F5B42F7
+P 3950 2750
+AR Path="/5F5AF575/5F5B42F7" Ref="#PWR042"  Part="1" 
+AR Path="/5F22641F/5F5B42F7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR042" H 3950 2600 50  0001 C CNN
+F 1 "+3.3V" H 3965 2923 50  0000 C CNN
+F 2 "" H 3950 2750 50  0001 C CNN
+F 3 "" H 3950 2750 50  0001 C CNN
+	1    3950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2800 3950 2750
+Wire Wire Line
+	3800 2800 3950 2800
+Connection ~ 3950 2800
+Wire Wire Line
+	3950 2800 4100 2800
+NoConn ~ 5100 3700
+$Comp
+L Device:C C21
+U 1 1 5F5B4302
+P 7050 4400
+AR Path="/5F5AF575/5F5B4302" Ref="C21"  Part="1" 
+AR Path="/5F22641F/5F5B4302" Ref="C?"  Part="1" 
+F 0 "C21" H 7165 4446 50  0000 L CNN
+F 1 "100n" H 7165 4355 50  0000 L CNN
+F 2 "" H 7088 4250 50  0001 C CNN
+F 3 "~" H 7050 4400 50  0001 C CNN
+	1    7050 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 4200 7050 4200
+Wire Wire Line
+	7050 4200 7050 4250
+$Comp
+L power:GND #PWR047
+U 1 1 5F5B430A
+P 7050 4850
+AR Path="/5F5AF575/5F5B430A" Ref="#PWR047"  Part="1" 
+AR Path="/5F22641F/5F5B430A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR047" H 7050 4600 50  0001 C CNN
+F 1 "GND" H 7055 4677 50  0000 C CNN
+F 2 "" H 7050 4850 50  0001 C CNN
+F 3 "" H 7050 4850 50  0001 C CNN
+	1    7050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4000 7250 4000
+Wire Wire Line
+	6300 4100 7250 4100
+Wire Wire Line
+	7250 4800 7050 4800
+Wire Wire Line
+	5100 4100 4900 4100
+Wire Wire Line
+	4900 4100 4900 4200
+Wire Wire Line
+	4900 4800 7050 4800
+Connection ~ 7050 4800
+Wire Wire Line
+	7050 4800 7050 4850
+Wire Wire Line
+	5100 4200 4900 4200
+Connection ~ 4900 4200
+Wire Wire Line
+	4900 4200 4900 4800
+Wire Wire Line
+	7050 4550 7050 4800
+Wire Wire Line
+	7250 4000 7250 4100
+Connection ~ 7250 4100
+Wire Wire Line
+	7250 4100 7250 4800
+Text Notes 4450 2000 0    236  ~ 0
+BNO055 IMU\n
+Text HLabel 4900 3200 0    50   Input ~ 0
+~IMU_NRST
+Wire Wire Line
+	4450 3600 5100 3600
+Text HLabel 5100 3400 0    50   Input ~ 0
+IMU_INT
+Wire Wire Line
+	5100 3900 4100 3900
+Text HLabel 4100 3850 2    50   Input ~ 0
+PA16_SER1_I2C_SDA
+Text HLabel 3800 3950 2    50   Input ~ 0
+PA17_SER1_I2C_SCL
+$EndSCHEMATC

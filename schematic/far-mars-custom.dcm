@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ABS25-32.768KHZ-1-T
+D Abracon 32.768kHz Crystal Unit +/-10ppm SMD 4-Pin 8 x 3.8 x 2.5mm
+F https://4donline.ihs.com/images/VipMasterIC/IC/ABRC/ABRCS01091/ABRCS01091-1.pdf?hkey=EF798316E3902B6ED9A73243A3159BB0
+$ENDCMP
+#
+#End Doc Library
